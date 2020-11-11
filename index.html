@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Tom Wishaupt</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script>
+            var darkMode = false;
+            function toggleDarkMode() {
+                if ( darkMode == false ) {
+                    document.documentElement.style.setProperty("--main-text-color", "#FFFFFF");
+                    document.documentElement.style.setProperty("background-image", "url('background-dark-wood.png')");
+                    document.getElementById('container').style.setProperty("background-image", "url('background-dark-denim.png')");
+                    document.getElementById('darktoggle').style.setProperty("filter", "invert(100%)");
+                    darkMode = true;
+                }
+                else {
+                    document.documentElement.style.setProperty("--main-text-color", "#000000");
+                    document.documentElement.style.setProperty("background-image", "url('background-wood.png')");
+                    document.getElementById('container').style.setProperty("background-image", "url('background-paper.png')");
+                    document.getElementById('darktoggle').style.setProperty("filter", "invert(0%)");
+                    darkMode = false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <img class="button" src="day-and-night.svg" id="darktoggle" alt="Toggle dark mode" onclick="toggleDarkMode()">
+        <div id="container">
+            <header>
+                <img src="profile.jpg" alt="Foto van mij.">
+                <div class="name">
+                    <p>Hallo, ik ben</p>
+                    <h1>Tom Wishaupt</h1>
+                </div>
+            </header>
+            <main>
+                <section>
+                    Van jongs af aan heb ik al een passie voor alles binnen de IT. Daarom was de keuze voor de opleiding System and Network Engineering bij de Hogeschool Utrecht makkelijk. Analytisch denken en nauwkeurig werken helpen mij bij het oplossen van problemen. Ik vind het belangrijk om voor mensen klaar te staan. Dit samen met humor en goede communicatie maakt mij een echte teamplayer.
+                </section>
+                <h1>Educatie</h1>
+                <ul>
+                    <li>Hbo System and Network Engineering (2018, Hogeschool Utrecht)</li>
+                    <li><a href="https://rhtapps.redhat.com/certifications/badge/verify/PFHLSSQ3IVZVX5GJV7JGHN6G4UAEQU3CUPSQX2KSDXT6RW46LQ3T7ULZ55KZZ56SKO7EQ3ETTLYZQ4U5NQYTCNA62RUWOCM34WWBUYQ=">Red Hat Certified System Administrator (2019)</a></li>
+                    <li><a href="https://rhtapps.redhat.com/certifications/badge/verify/PFHLSSQ3IVZVX5GJV7JGHN6G4UAEQU3CUPSQX2KSDXT6RW46LQ3XCZJWRJNV7ILTXVE4I6VB7OTCG4U5NQYTCNA62RUWOCM34WWBUYQ=">Red Hat Certified Engineer (2019)</a></li>
+                </ul>
+                <h1>Werkervaring</h1>
+                <table>
+                    <tr>
+                        <td class="date-column">sep. 2018 - heden</td>
+                        <td>
+                            <h2>RIVM (SSC-Campus)</h2>
+                            <h3>OpenShift Engineer</h3>
+                            Binnen deze functie heb ik onder meer gewerkt aan de doorontwikeling, het onderhoud en de dagelijkse werkzaamheden van het containerhostingplatform, gebaseerd op Red Hat Open Shift.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-column">feb. 2018 - jun. 2018</td>
+                        <td>
+                            <h2>SSC-Campus (onderdeel van RIVM)</h2>
+                            <h3>Afstudeerstage OpenShift containerhostingplatform</h3>
+                            Tijdens mijn afstudeerstage heb ik voor SSC-Campus enkele vragen beantwoord die men had omtrent het bijwerken en beveiligen van het OpenShift platform.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-column">feb. 2017 - jun. 2017</td>
+                        <td>
+                            <h2>SSC-Campus (onderdeel van RIVM)</h2>
+                            <h3>Project pakketselectie containerhostingplatform</h3>
+                            In samenwerking met drie medestudenten heb ik een pakketselectie gedaan voor het containerhostingplatform bij het SSC-Campus.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-column">aug. 2016 - jan. 2017</td>
+                        <td>
+                            <h2>SSC-Campus (onderdeel van RIVM)</h2>
+                            <h3>Stagair werkplekbeheer</h3>
+                            Tijdens deze stage heb ik onderzoek gedaan naar de mogelijkheden van een Linux VDI. Hierbij heb ik (o.a.) met Citrix en Red Hat Enterprise Virtualization gewerkt.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-column">feb. 2016 - aug. 2016</td>
+                        <td>
+                            <h2>Studentaanhuis.nl</h2>
+                            <h3>Field Technician</h3>
+                        </td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+            <footer>
+                <p>&#169;&nbsp;2020&nbsp;Tom Wishaupt.<br>Achtergronden van <a href="https://www.toptal.com/designers/subtlepatterns">Toptal Subtle Patterns</a>.<br>Icoontje gemaakt door <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> van <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            </footer>
+    </body>
+</html>
