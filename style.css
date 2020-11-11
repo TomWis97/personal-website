@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&&family=Roboto+Slab:wght@300&display=swap');
 
+@media only screen and (max-width: 600px) {
+    #container {
+        /* I'm so sorry for !important. */
+        max-width: unset !important;
+        min-width: unset !important;
+        width: 100% !important;
+        margin: 0 !important;
+        overflow: hidden;
+    }
+    body {
+        margin: 0;
+    }
+    html {
+        margin: 0;
+    }
+}
+
 :root {
     --main-text-color: #000000;
     --subtle-text-color: #5c5c5c;
