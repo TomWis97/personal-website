@@ -1,20 +1,30 @@
+/* Keep in mind that I'm a sysadmin, not a web designer. */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&&family=Roboto+Slab:wght@300&display=swap');
 
 @media only screen and (max-width: 600px) {
-    #container {
         /* I'm so sorry for !important. */
+    #container {
         max-width: unset !important;
         min-width: unset !important;
-        width: 100% !important;
+        width: auto !important;
         margin: 0 !important;
         overflow: hidden;
     }
-    body {
-        margin: 0;
+
+    header img {
+        display: block !important;
+        width: auto !important;
+        float: unset !important;
+        height: 10em !important;
+        margin: auto;
     }
-    html {
-        margin: 0;
+
+    .name {
+        float: unset !important;
+        width: 100% !important;
     }
+
 }
 
 :root {
@@ -29,10 +39,11 @@ html {
 }
 
 .button {
-    width: 25px;
+    width: 50px;
     position: fixed;
     float: right;
     right: 10px;
+    cursor: pointer;
 }
 
 #container {
