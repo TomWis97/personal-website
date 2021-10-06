@@ -12,6 +12,7 @@
         -->
         <title>Tom Wishaupt</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="src/clippy.css" media="all">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,6 +69,7 @@
                     <li>Hbo System and Network Engineering (2018, Hogeschool Utrecht)</li>
                     <li><a href="https://rhtapps.redhat.com/certifications/badge/verify/PFHLSSQ3IVZVX5GJV7JGHN6G4UAEQU3CUPSQX2KSDXT6RW46LQ3T7ULZ55KZZ56SKO7EQ3ETTLYZQ4U5NQYTCNA62RUWOCM34WWBUYQ=">Red Hat Certified System Administrator (2019)</a></li>
                     <li><a href="https://rhtapps.redhat.com/certifications/badge/verify/PFHLSSQ3IVZVX5GJV7JGHN6G4UAEQU3CUPSQX2KSDXT6RW46LQ3XCZJWRJNV7ILTXVE4I6VB7OTCG4U5NQYTCNA62RUWOCM34WWBUYQ=">Red Hat Certified Engineer (2019)</a></li>
+                    <li><a href=" https://rhtapps.redhat.com/certifications/badge/verify/PFHLSSQ3IVZVX5GJV7JGHN6G4UAEQU3CUPSQX2KSDXT6RW46LQ37KLSOOPEYMJDAE5EJIF3JZ6D665JFQCX7XVXXH5DT452GL3CMQ36Q77GFTUQMZCEY6URHUQ5UKSGZOKOWYMJRGQPNI2LHBGN6LLA2MI======">Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices (2021)</a></li>
                 </ul>
                 <h1>Werkervaring</h1>
                 <table>
@@ -113,8 +115,22 @@
                 </table>
             </main>
         </div>
-            <footer>
-                <p>&#169;&nbsp;2020&nbsp;Tom Wishaupt.<br>Achtergronden van <a href="https://www.toptal.com/designers/subtlepatterns">Toptal Subtle Patterns</a>.<br>Icoontje gemaakt door <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> van <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>.
-            </footer>
+        <footer>
+            <p>&#169;&nbsp;2021&nbsp;Tom Wishaupt.<br>Achtergronden van <a href="https://www.toptal.com/designers/subtlepatterns">Toptal Subtle Patterns</a>.<br>Icoontje gemaakt door <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> van <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>.
+        </footer>
+        <!-- jQuery 1.7+ -->
+        <script src="src/jquery-3.6.0.min.js"></script>
+
+        <!-- Clippy.js -->
+        <script src="build/clippy.min.js"></script>
+
+        <!-- Init script -->
+        <script type="text/javascript">
+            clippy.load('Clippy', function(agent){
+                // do anything with the loaded agent
+                agent.show();
+                agent.speak("Welkom! Ik ben Clippy en doe hier niet veel meer dan een beetje memory verbruiken.");
+            });
+        </script>
     </body>
 </html>
