@@ -125,8 +125,11 @@
             </main>
         </div>
         <footer>
-            <p>&#169;&nbsp;2021&nbsp;Tom Wishaupt.<br>Achtergronden van <a href="https://www.toptal.com/designers/subtlepatterns">Toptal Subtle Patterns</a>.<br>Icoontje gemaakt door <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> van <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>.
+            <p>&#169;&nbsp;<span id="year"></span>&nbsp;Tom Wishaupt.<br>Achtergronden van <a href="https://www.toptal.com/designers/subtlepatterns">Toptal Subtle Patterns</a>.<br>Icoontje gemaakt door <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> van <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>.
         </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
         <!-- jQuery 1.7+ -->
         <script src="src/jquery-3.6.0.min.js"></script>
 
