@@ -168,5 +168,10 @@
                 agent.speak("Welkom! Tom is niet op zoek naar een andere baan, bedankt voor je interesse!");
             });
         </script>
+        <script>
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                toggleDarkMode();
+            }
+        </script>
     </body>
 </html>
