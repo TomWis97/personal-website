@@ -113,6 +113,15 @@ li a {
     text-align: right;
     vertical-align: top;
     padding-top: 10px;
+    border-right-style: solid;
+    border-right-width: 4px;
+    border-right-color: #FF000000;
+}
+
+.sub-item {
+    border-left-style: solid;
+    border-left-width: 4px;
+    padding-left: 2em;
 }
 
 main table td {
